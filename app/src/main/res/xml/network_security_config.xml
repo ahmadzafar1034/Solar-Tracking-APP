@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The ESP32-S3 serves plain HTTP on the local network at a raw IP address
+  (e.g. 192.168.4.1). <domain> entries can't match IP ranges, so cleartext
+  is allowed in base-config. The app only ever talks to the tracker.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
